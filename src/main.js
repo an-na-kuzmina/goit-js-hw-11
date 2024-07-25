@@ -1,3 +1,14 @@
+/*
+Завдання — Пошук зображень
+Створи застосунок пошуку зображень за ключовим словом і їх перегляду в галереї. 
+Додай оформлення елементів інтерфейсу згідно з макетом.
+Для організації коду використовуй модульність та синтаксис export/import:
+У файлі pixabay-api.js зберігай функції для HTTP-запитів.
+У файлі render-functions.js створи функції для відображення елементів інтерфейсу.
+У файлі main.js напиши всю логіку роботи додатка.
+
+*/
+
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
@@ -51,7 +62,6 @@ form.addEventListener('submit', event => {
         messageColor: 'white',
         backgroundColor: '#E25757',
         position: 'topRight',
-        timeout: 6000,
       });
     })
     .finally(() => {
