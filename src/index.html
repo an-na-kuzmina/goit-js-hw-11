@@ -4,14 +4,26 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>HW11</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
+      <form id="search-form">
+        <input
+          class="input-form"
+          placeholder="Search images..."
+          type="text"
+          id="search-input"
+          required
+        />
+        <button class="search-btn" type="submit">Search</button>
+      </form>
+      <div class="loader-div" id="loader" style="display: none">
+        <span class="loader"></span>
+      </div>
+
+      <ul class="list" id="gallery"></ul>
     </section>
 
     <script type="module" src="./main.js"></script>
